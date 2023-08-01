@@ -12029,7 +12029,7 @@ section {
 }
 
 .header {
-  font-size: 33px;
+  font-size: 35px;
   font-weight: 600;
   position: relative;
   text-transform: capitalize;
@@ -12038,50 +12038,11 @@ section {
 
 .sub-header {
   font-size: 18px;
-  font-weight: 500;
-  padding-left: 7rem;
+  font-weight: 600;
   color: #f09133;
   position: relative;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-}
-.sub-header::after {
-  position: absolute;
-  content: "";
-  width: 6rem;
-  height: 2px;
-  left: 0%;
-  bottom: 50%;
-  background-color: #f09133;
-}
-
-.sub-header-center {
-  font-size: 18px;
-  font-weight: 500;
-  color: #f09133;
-  position: relative;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  margin: 0 auto;
-  width: fit-content;
-}
-.sub-header-center::before {
-  position: absolute;
-  content: "";
-  width: 6rem;
-  height: 2px;
-  left: 107%;
-  bottom: 50%;
-  background-color: #f09133;
-}
-.sub-header-center::after {
-  position: absolute;
-  content: "";
-  width: 6rem;
-  height: 2px;
-  right: 107%;
-  bottom: 50%;
-  background-color: #f09133;
 }
 
 nav {
@@ -12278,6 +12239,21 @@ header .logo-header img {
   z-index: -1;
   object-fit: contain;
   filter: brightness(20%);
+}
+
+.about-us .about-us-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .about-us-flex .img-div {
+  width: 40%;
+}
+.about-us .about-us-flex .img-div img {
+  width: 100%;
+  border-radius: 8px;
+}
+.about-us .about-us-flex .info-div {
+  width: 55%;
 }
 
 footer {

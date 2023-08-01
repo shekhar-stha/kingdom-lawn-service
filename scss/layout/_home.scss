@@ -101,6 +101,25 @@
     }
 }
 
+.about-us{
+    .about-us-flex{
+        display: flex;
+        justify-content: space-between;
+
+        .img-div{
+            width: 40%;
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .info-div{
+            width: 55%;
+        }
+    }
+}
+
 
 // Footer
 footer {

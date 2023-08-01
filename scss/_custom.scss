@@ -217,7 +217,7 @@ section {
 }
 
 .header {
-    font-size: 33px;
+    font-size: 35px;
     font-weight: 600;
     position: relative;
     text-transform: capitalize;
@@ -226,51 +226,9 @@ section {
 
 .sub-header {
     font-size: 18px;
-    font-weight: 500;
-    padding-left: 7rem;
+    font-weight: 600;
     color: $secondary;
     position: relative;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-
-    &::after {
-        position: absolute;
-        content: "";
-        width: 6rem;
-        height: 2px;
-        left: 0%;
-        bottom: 50%;
-        background-color: $secondary;
-    }
-}
-
-.sub-header-center {
-    font-size: 18px;
-    font-weight: 500;
-    color: $secondary;
-    position: relative;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    margin: 0 auto;
-    width: fit-content;
-
-    &::before {
-        position: absolute;
-        content: "";
-        width: 6rem;
-        height: 2px;
-        left: 107%;
-        bottom: 50%;
-        background-color: $secondary;
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-        width: 6rem;
-        height: 2px;
-        right: 107%;
-        bottom: 50%;
-        background-color: $secondary;
-    }
 }
