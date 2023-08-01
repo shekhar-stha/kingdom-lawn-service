@@ -1,0 +1,32 @@
+nav {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .navbar-brand {
+        img {
+            width: 20rem;
+        }
+    }
+
+    ul {
+        li {
+            font-size: 18px;
+            font-weight: 500;
+            padding: 0 1.2rem;
+
+            a {
+                color: $dark !important;
+            }
+        }
+    }
+}
+
+header {
+    .logo-header {
+        img {
+            position: absolute;
+            width: 18rem !important;
+            object-fit: contain;
+            top: 30%;
+        }
+    }
+}
