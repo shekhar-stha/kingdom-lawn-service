@@ -27,7 +27,7 @@
     <header class="position-relative">
         <!-- Top of the navbar -->
         <div class="top-information bg-primary">
-            <div class="container py-3 d-flex justify-content-between">
+            <div class="container py-3 d-flex flex-vm-row flex-column align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                     <a href="tel:+19195646798" title="phone number" class="text-white fw-500 fs-18">
                         <i class="fs-15 fa-solid fa-phone text-secondary fs-20 me-1"></i>
@@ -35,7 +35,7 @@
                     </a>
                 </div>
 
-                <div class="d-flex align-items-center ms-4">
+                <div class="d-flex align-items-center mt-vm-0 mt-3">
                     <a title="location" class="text-white fw-500 fs-18">
                         <i class="fs-15 fa-solid fa-location-dot text-secondary fs-20 me-1"></i>
                         Durham, NC
@@ -65,6 +65,8 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
+
+                        <a class="btn btn-secondary d-lg-none d-inline" href="">Call Now</a>
                     </ul>
                 </div>
             </div>
@@ -80,7 +82,7 @@
                         labore
                         et dolore magna aliqua.</p>
 
-                    <div class="mt-5">
+                    <div class="mt-5 d-flex justify-content-xl-start justify-content-center">
                         <a class="btn btn-primary fs-20 rounded-1 px-4" href="">
                             Call Now
                         </a>
@@ -137,7 +139,256 @@
         </div>
     </section>
 
-    <footer>
+    <!-- Social Media Ratings -->
+    <section data-aos="fade-up" class="py-2 position-relative">
+        <img class="position-absolute w-100 h-100 top-0 start-0"
+            style="z-index: -1; filter: brightness(30%); object-fit: cover;" src="/img/aerial-view-lawn-mowing.jpg"
+            alt="background-image">
+        <div data-aos="fade-up" class="ratings-grid mt-5 container">
+            <div class="ratings-card">
+                <img src="/img/facebook.png" alt="facebok logo">
+                <h4>Facebook</h4>
+                <p class="text-center ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+            <div class="ratings-card">
+                <img src="/img/google.png" alt="google logo">
+                <h4>Google</h4>
+                <p class="text-center ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+            <div class="ratings-card">
+                <img src="/img/Yelp.png" alt="yelp logo">
+                <h4>Yelp</h4>
+                <p class="text-center ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services position-relative">
+        <div class="container">
+            <p class="sub-header">Our Services</p>
+            <h3 class="header">Services that we provide</h3>
+            <div class="services-grid">
+                <div class="service-col">
+                    <div class="img-div">
+                        <img src="/img/lot-cleaning.jpeg" alt="Staff Group Photo">
+                    </div>
+                    <div class="information">
+                        <h4>Temporary Staffing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-col">
+                    <div class="img-div">
+                        <img src="/img/trimming.jpeg" alt="Electrician Working">
+                    </div>
+                    <div class="information">
+                        <h4>Safety Training and Compliance</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                </div>
+
+                <div class="service-col">
+                    <div class="img-div">
+                        <img src="/img/trimming.jpeg" alt="Electrician Working">
+                    </div>
+                    <div class="information">
+                        <h4>Skills Assessment and Training</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1690907892">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="cta mt-0">
+        <div class="container">
+            <h4 class="text-center text-white">Get a Free Estimate for your Lawn Services</h4>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-secondary px-5 fs-20 mt-4" href="">Call Now</a>
+            </div>
+        </div>
+        <img src="/img/aerial-view-lawn-mowing.jpg" alt="">
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us-flex flex-md-row-reverse ">
+                <div class="img-div">
+                    <img src="/img/lot-cleaning.jpeg" alt="">
+                </div>
+                <div class="info-div">
+                    <p class="sub-header">About Us</p>
+                    <h3 class="header">Who are we ?</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <a class="btn btn-secondary rounded-1 px-4 fs-20 mt-4" href="">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- * PORTFOLIO SECTION STARTS HERE  -->
+    <section class="portfolio py-5" style="background-color: #d9e9d2;">
+        <div class="container">
+            <div class="row">
+                <div class="portfolio__title text-center">
+                    <p class="sub-header">Portfolio</p>
+                    <h2 class="header">Gallery Of Our Achievements</h2>
+                </div>
+
+                <div class="portfolio__img-container">
+                    <div class="portfolio-pic__row row">
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="content">
+                                <img src="https://picsum.photos/id/27/395/270" class="img-fluid portfolio__img"
+                                    alt="card-img" />
+                                <!-- * Overlay Section Started  -->
+                                <div class="content-overlay"></div>
+                                <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
+                                    <p class="text-start fw-normal content-overlay-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                        dolores perferendis quisquam, magnam nostrum excepturi
+                                        corrupti? Facilis dolore tempore quasi.
+                                    </p>
+
+                                    <!-- * Overlay Section Ended  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="content">
+                                <img src="https://picsum.photos/id/37/395/270" class="img-fluid portfolio__img"
+                                    alt="card-img" />
+                                <!-- * Overlay Section Started  -->
+                                <div class="content-overlay"></div>
+                                <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
+                                    <p class="text-start fw-normal content-overlay-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                        dolores perferendis quisquam, magnam nostrum excepturi
+                                        corrupti? Facilis dolore tempore quasi.
+                                    </p>
+
+                                    <!-- * Overlay Section Ended  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="content">
+                                <img src="https://picsum.photos/id/557/395/270" class="img-fluid portfolio__img"
+                                    alt="card-img" />
+                                <!-- * Overlay Section Started  -->
+                                <div class="content-overlay"></div>
+                                <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
+                                    <p class="text-start fw-normal content-overlay-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                        dolores perferendis quisquam, magnam nostrum excepturi
+                                        corrupti? Facilis dolore tempore quasi.
+                                    </p>
+
+                                    <!-- * Overlay Section Ended  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-pic__row row">
+                        <div class="col-xl-3 col-lg-3 col-md-4">
+                            <div class="content h-100">
+                                <img src="https://picsum.photos/id/567/395/270" class="img-fluid portfolio__img"
+                                    alt="card-img" />
+                                <!-- * Overlay Section Started  -->
+                                <div class="content-overlay"></div>
+                                <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
+                                    <p class="text-start fw-normal content-overlay-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                        dolores perferendis quisquam, magnam nostrum excepturi
+                                        corrupti? Facilis dolore tempore quasi.
+                                    </p>
+
+                                    <!-- * Overlay Section Ended  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-4">
+                            <div class="content h-100">
+                                <img src="https://picsum.photos/id/678/395/270"
+                                    class="portfolio__img portfolio__img--big" alt="card-img" />
+                                <!-- * Overlay Section Started  -->
+                                <div class="content-overlay"></div>
+                                <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
+                                    <p class="text-start fw-normal content-overlay-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                        dolores perferendis quisquam, magnam nostrum excepturi
+                                        corrupti? Facilis dolore tempore quasi.
+                                    </p>
+
+                                    <!-- * Overlay Section Ended  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4">
+                            <div class="content h-100">
+                                <img src="https://picsum.photos/id/547/395/270" class="img-fluid portfolio__img"
+                                    alt="card-img" />
+                                <!-- * Overlay Section Started  -->
+                                <div class="content-overlay"></div>
+                                <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
+                                    <p class="text-start fw-normal content-overlay-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                                        dolores perferendis quisquam, magnam nostrum excepturi
+                                        corrupti? Facilis dolore tempore quasi.
+                                    </p>
+
+                                    <!-- * Overlay Section Ended  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="position-relative">
+        <img class="bg-img" src="/img/aerial-view-lawn-mowing.jpg" alt="">
         <div class="container footer-grid">
             <div class="footer-col">
                 <h4>Quick Navigations</h4>
@@ -148,7 +399,7 @@
             </div>
 
             <div class="footer-col justify-content-center">
-                <img src="/img/logo-white.png" alt="Logo White">
+                <img class="logo" src="/img/logo.png" alt="Logo White">
             </div>
 
             <div class="footer-col">
@@ -181,7 +432,7 @@
 
         <hr style="color: #ffffff;" class="mt-4">
 
-        <p class="pt-2 pb-3 fw-500 text-white text-center">&copy JGA Electric 2023. All rights reserved.</p>
+        <p class="pt-2 pb-3 fw-500 text-white text-center">&copy Kingdom Lawn Services 2023. All rights reserved.</p>
 
         <p class="pt-2 pb-3 fw-500 text-white text-center">The content available on this website is owned by us and
             our licensors. Copying any content, including images, without our consent is prohibited.</p>
