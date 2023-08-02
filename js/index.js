@@ -596,34 +596,33 @@
 AOS.init();
 
 
-// $('.services-row').slick({
-//   dots: true,
-//   infinite: true,
-//   loop: true,
-//   speed: 300,
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
-//   nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
-//   responsive: [
-//     {
-//       breakpoint: 1200,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//   ]
-// });
+$('.services-grid').slick({
+  dots: true,
+  loop: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
+  nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
 $(".client-slider").slick({
   arrows: false,
@@ -636,125 +635,3 @@ $(".client-slider").slick({
   slidesToScroll: 1,
 });
 
-
-  // Get the toggle switch element
-  const toggleSwitch = document.getElementById('flexSwitchCheckDefault');
-
-  // Get the form labels you want to change to Spanish
-  const formLabels = document.querySelectorAll('.form-label');
-
-  const checkboxLabels = document.querySelectorAll('.checkbox');
-
-  const radioLabels = document.querySelectorAll('.radio');
-
-  const options = document.querySelectorAll('.option');
-
-  // Define the Spanish translations for the labels
-  const spanishLabels = [
-    'Inglés',
-    'Español',
-    'Nombre Completo',
-    'Correo Electrónico',
-    'Teléfono',
-    'Spanish',
-    'Lorem Spanish',
-    'Lorem Spanish',
-    'Mensaje'
-  ];
-  
-
-  const englishLabels = [
-    'English',
-    'Spanish',
-    'Full Name',
-    'Email',
-    'Phone',
-    'Lorem',
-    'Lorem Ipsum',
-    'Lorem Ipsum',
-    'Message'
-    ];
-
-    const checkboxEnglish = [
-      'Default checkbox',
-      'Checked checkbox'
-    ]
-
-    const checkboxSpanish = [
-      'Spanish checkbox',
-      'Spanish checkbox'
-    ]
-
-    const radioEnglish = [
-      'Default radio',
-      'Checked checked radio'
-    ]
-
-    const radioSpanish = [
-      'Spanish radio',
-      'Spanish checked radio'
-    ]
-
-    const optionEnglish = [
-      'Open this select menu',
-      'One',
-      'Two',
-      'Three'
-    ]
-
-    const optionSpanish = [
-      'Open this select Spanish',
-      'Ookne',
-      'Twso',
-      'Threse'
-    ]
-
-  // Function to change the form labels to Spanish
-  function setSpanishLabels() {
-    formLabels.forEach((label, index) => {
-      label.textContent = spanishLabels[index];
-    });
-
-    checkboxLabels.forEach((label, index) => {
-      label.textContent = checkboxSpanish[index];
-    });
-
-    radioLabels.forEach((label, index) => {
-      label.textContent = radioSpanish[index];
-    });
-
-    options.forEach((label, index) => {
-      label.textContent = optionSpanish[index]
-    })
-
-  }
-
-  // Function to reset the form labels to English
-  function setEnglishLabels() {
-    formLabels.forEach((label, index) => {
-      label.textContent = englishLabels[index];
-    });
-
-    checkboxLabels.forEach((label, index) => {
-      label.textContent = checkboxEnglish[index];
-    });
-
-    radioLabels.forEach((label, index) => {
-      label.textContent = radioEnglish[index];
-    });
-
-    options.forEach((label, index) => {
-      label.textContent = optionEnglish[index]
-    })
-  }
-
-  // Add event listener to the toggle switch
-  toggleSwitch.addEventListener('change', function() {
-    if (this.checked) {
-    // Toggle switch is ON, change labels to Spanish
-    setSpanishLabels();
-    } else {
-    // Toggle switch is OFF, reset labels to English
-    setEnglishLabels();
-    }
-  });

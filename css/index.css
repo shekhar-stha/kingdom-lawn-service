@@ -12968,6 +12968,26 @@ section {
   text-transform: uppercase;
 }
 
+[data-scene] {
+  max-width: 800px;
+  padding: 10vh 50px;
+  margin: 10vh auto;
+  font-family: sans-serif;
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to top, rgb(252, 92, 125), rgb(106, 130, 251));
+  border-radius: 5px;
+}
+
+[data-scene]:first-child {
+  background: linear-gradient(to bottom, rgb(168, 192, 255), rgb(63, 43, 150));
+}
+
+[data-scene]:last-child {
+  margin-bottom: 50vh;
+}
+
 nav {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -13021,7 +13041,7 @@ header .logo-header img {
   text-indent: -9999px;
 }
 .slick-dots li.slick-active button {
-  background-color: #0e9208;
+  background-color: #f09133;
   width: 2rem;
   border-radius: 20px;
 }
@@ -13284,6 +13304,7 @@ header .logo-header img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  object-fit: cover;
 }
 .about-us .about-us-flex .info-div {
   width: 55%;
@@ -13356,27 +13377,13 @@ header .logo-header img {
 .services {
   padding: 3rem 0;
 }
-.services .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-@media (max-width: 992px) {
-  .services .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .services .services-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .services .services-grid .service-col {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #fcfef7;
+  width: 100%;
 }
 .services .services-grid .service-col .img-div {
   width: 100%;
@@ -13393,7 +13400,7 @@ header .logo-header img {
   }
 }
 .services .services-grid .service-col .information {
-  padding: 0.4rem 1rem 1.8rem;
+  padding: 0.4rem 1rem 1rem;
 }
 .services .services-grid .service-col .information h4, .services .services-grid .service-col .information .h4 {
   text-align: center;
@@ -13486,6 +13493,7 @@ header .logo-header img {
   max-height: 270px;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .portfolio__img--big {
   max-width: 750px;
@@ -13566,7 +13574,8 @@ header .logo-header img {
 }
 
 .content:hover .content-details2 {
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.8;
 }
 @media (max-width: 991.98px) {
@@ -13578,7 +13587,7 @@ header .logo-header img {
 .content-details p {
   color: #fff;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1.3rem;
 }
 @media (max-width: 575.98px) {
   .content-details p {

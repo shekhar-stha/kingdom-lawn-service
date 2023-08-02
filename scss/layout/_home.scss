@@ -194,6 +194,7 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 8px;
+                object-fit: cover;
             }
         }
 
@@ -275,17 +276,6 @@
     padding: 3rem 0;
 
     .services-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-
-        @media (max-width: 992px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
 
         .service-col {
             border-radius: 8px;
@@ -293,6 +283,7 @@
             position: relative;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             background-color: $white;
+            width: 100%;
 
             .img-div {
                 width: 100%;
@@ -310,7 +301,7 @@
             }
 
             .information {
-                padding: 0.4rem 1rem 1.8rem;
+                padding: 0.4rem 1rem 1rem;
 
                 h4 {
                     text-align: center;
@@ -414,6 +405,7 @@
         max-height: 270px;
         width: 100%;
         height: 100%;
+        object-fit: cover;
 
         &--big {
             max-width: 750px;
@@ -505,7 +497,8 @@
 }
 
 .content:hover .content-details2 {
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     // right: 10%;
     opacity: 0.8;
 
@@ -517,7 +510,7 @@
 .content-details p {
     color: #fff;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 1.3rem;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.85rem;
