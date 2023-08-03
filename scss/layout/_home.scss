@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    padding: 5rem 0;
+    padding: 1rem 0 5rem;
 
     @media (max-width: 576px) {
         padding: 3rem 0;
@@ -28,7 +28,7 @@
                 color: $white;
                 font-weight: 600;
                 margin-bottom: 3rem;
-                margin-top: 3rem;
+                margin-top: 2rem;
 
                 @media (max-width: 1200px) {
                     text-align: center;
@@ -161,7 +161,9 @@
             }
         }
     }
+}
 
+.nav-hero{
     .hero-bg {
         position: absolute;
         top: 0;
@@ -395,10 +397,6 @@
             height: 4rem;
             border: 2px solid $secondary;
         }
-
-        @include media-breakpoint-down(sm) {
-            width: auto !important;
-        }
     }
 
     .slick-dots li.slick-active button {
@@ -606,7 +604,8 @@ footer {
     }
 
     .logo {
-        max-width: 26rem;
+        max-width: 90%;
+
     }
 
     .footer-grid {

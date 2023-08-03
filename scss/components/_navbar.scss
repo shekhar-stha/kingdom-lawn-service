@@ -1,11 +1,11 @@
 nav {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     .navbar-brand {
         max-width: calc(100% - 7rem);
         img {
-            width: 320px;
+            width: 370px;
             max-width: 100%;
+            z-index: 2;
         }
     }
 
@@ -16,7 +16,7 @@ nav {
             padding: 0 1.2rem;
 
             a {
-                color: $dark !important;
+                color: $white !important;
             }
 
             @media (max-width: 992px) {
@@ -34,6 +34,7 @@ header {
             width: 18rem !important;
             object-fit: contain;
             top: 30%;
+            mix-blend-mode: color-burn;
         }
     }
 }

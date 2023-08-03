@@ -12988,15 +12988,13 @@ section {
   margin-bottom: 50vh;
 }
 
-nav {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 nav .navbar-brand {
   max-width: calc(100% - 7rem);
 }
 nav .navbar-brand img {
-  width: 320px;
+  width: 370px;
   max-width: 100%;
+  z-index: 2;
 }
 nav ul li {
   font-size: 18px;
@@ -13004,7 +13002,7 @@ nav ul li {
   padding: 0 1.2rem;
 }
 nav ul li a {
-  color: #212529 !important;
+  color: #fcfef7 !important;
 }
 @media (max-width: 992px) {
   nav ul li {
@@ -13018,6 +13016,7 @@ header .logo-header img {
   width: 18rem !important;
   object-fit: contain;
   top: 30%;
+  mix-blend-mode: color-burn;
 }
 
 .slick-dots {
@@ -13110,7 +13109,7 @@ header .logo-header img {
 
 .hero {
   position: relative;
-  padding: 5rem 0;
+  padding: 1rem 0 5rem;
 }
 @media (max-width: 576px) {
   .hero {
@@ -13140,7 +13139,7 @@ header .logo-header img {
   color: #fcfef7;
   font-weight: 600;
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 @media (max-width: 1200px) {
   .hero .hero-flex .info-side h1, .hero .hero-flex .info-side .h1 {
@@ -13272,7 +13271,8 @@ header .logo-header img {
     left: 55%;
   }
 }
-.hero .hero-bg {
+
+.nav-hero .hero-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -13480,11 +13480,6 @@ header .logo-header img {
   height: 4rem;
   border: 2px solid #f09133;
 }
-@media (max-width: 575.98px) {
-  .testimonial-card {
-    width: auto !important;
-  }
-}
 .testimonial .slick-dots li.slick-active button {
   background-color: #fcfef7;
   border: 2px solid #f09133;
@@ -13669,7 +13664,7 @@ footer .bg-img {
   object-fit: cover;
 }
 footer .logo {
-  max-width: 26rem;
+  max-width: 90%;
 }
 footer .footer-grid {
   display: grid;
