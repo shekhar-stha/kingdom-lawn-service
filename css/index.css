@@ -13282,6 +13282,25 @@ header .logo-header img {
   object-fit: cover;
   filter: brightness(20%);
 }
+.nav-hero .custom-shape-divider-bottom-1691083487 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.nav-hero .custom-shape-divider-bottom-1691083487 svg {
+  position: relative;
+  display: block;
+  width: calc(201% + 1.3px);
+  height: 45px;
+  transform: rotateY(180deg);
+}
+.nav-hero .custom-shape-divider-bottom-1691083487 .shape-fill {
+  fill: #F8F8F8;
+}
 
 .about-us .about-us-flex {
   display: flex;
