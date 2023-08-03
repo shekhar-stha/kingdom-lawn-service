@@ -372,6 +372,70 @@
     }
 }
 
+
+// * TESTIMONIALS SECTION START
+.testimonial {
+    background-color: #d9e9d2;
+    padding: 2rem 0;
+
+    .ratings i {
+        color: #57e32c;
+    }
+
+    &-card {
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        margin: 0;
+        overflow: hidden;
+        padding: 2rem 1.5rem;
+        position: relative;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            border: 2px solid $secondary;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: auto !important;
+        }
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: $white;
+        border: 2px solid $secondary;
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+        position: relative;
+    }
+
+    .slick-dots li.slick-active {
+        margin: 0 0.25rem;
+        position: relative;
+    }
+
+    .slick-dots li.slick-active::before {
+        content: "";
+        position: absolute;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background-color: $secondary;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .slick-dots li button::before {
+        color: red;
+    }
+}
+
+// * TESTIMONIALS SECTION END
+
+
 // * PORTFOLIO SECTION START
 .portfolio {
     padding: 2rem 0;
@@ -531,7 +595,7 @@ footer {
     background-color: rgba(22, 59, 7, 0.9);
     padding: 3rem 0;
 
-    .bg-img{
+    .bg-img {
         position: absolute;
         width: 100%;
         left: 0%;
@@ -541,7 +605,7 @@ footer {
         object-fit: cover;
     }
 
-    .logo{
+    .logo {
         max-width: 26rem;
     }
 

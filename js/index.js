@@ -624,14 +624,24 @@ $('.services-grid').slick({
   ]
 });
 
-$(".client-slider").slick({
+$(".testimonial-carousel").slick({
+  infinite: true,
+  slidesToShow: 2,
   arrows: false,
   dots: true,
-  autoplay: false,
-  speed: 500,
-  pauseOnHover: true,
-  centerPadding: "30",
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 

@@ -13460,6 +13460,59 @@ header .logo-header img {
   z-index: -1;
 }
 
+.testimonial {
+  background-color: #d9e9d2;
+  padding: 2rem 0;
+}
+.testimonial .ratings i {
+  color: #57e32c;
+}
+.testimonial-card {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+.testimonial-card img {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #f09133;
+}
+@media (max-width: 575.98px) {
+  .testimonial-card {
+    width: auto !important;
+  }
+}
+.testimonial .slick-dots li.slick-active button {
+  background-color: #fcfef7;
+  border: 2px solid #f09133;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+}
+.testimonial .slick-dots li.slick-active {
+  margin: 0 0.25rem;
+  position: relative;
+}
+.testimonial .slick-dots li.slick-active::before {
+  content: "";
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #f09133;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.testimonial .slick-dots li button::before {
+  color: red;
+}
+
 .portfolio {
   padding: 2rem 0;
 }
