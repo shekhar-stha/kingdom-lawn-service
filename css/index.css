@@ -13418,6 +13418,9 @@ header .logo-header img {
     height: 18rem;
   }
 }
+.services .services-grid .service-col .img-div img:hover {
+  filter: brightness(50%);
+}
 .services .services-grid .service-col .information {
   padding: 0.4rem 1rem 1rem;
 }
